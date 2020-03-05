@@ -1,0 +1,9 @@
+
+.ssh
+.vagrant/
+database/
+*.zip
+.DS_Store
+local
+tmp/
+.env.local
