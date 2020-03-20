@@ -1,0 +1,21 @@
+apiVersion: config.openshift.io/v1
+kind: Infrastructure
+metadata:
+  creationTimestamp: null
+  name: cluster
+spec:
+  cloudConfig:
+    key: config
+    name: cloud-provider-config
+status:
+  apiServerInternalURI: https://api-int.76f2.green.osp.opentlc.com:6443
+  apiServerURL: https://api.76f2.green.osp.opentlc.com:6443
+  etcdDiscoveryDomain: 76f2.green.osp.opentlc.com
+  infrastructureName: 76f2-5s6hr
+  platform: OpenStack
+  platformStatus:
+    openstack:
+      apiServerInternalIP: 192.168.47.5
+      ingressIP: 192.168.47.7
+      nodeDNSIP: 192.168.47.6
+    type: OpenStack

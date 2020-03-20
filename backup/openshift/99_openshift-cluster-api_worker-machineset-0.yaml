@@ -1,0 +1,58 @@
+apiVersion: machine.openshift.io/v1beta1
+kind: MachineSet
+metadata:
+  creationTimestamp: null
+  labels:
+    machine.openshift.io/cluster-api-cluster: 76f2-5s6hr
+    machine.openshift.io/cluster-api-machine-role: worker
+    machine.openshift.io/cluster-api-machine-type: worker
+  name: 76f2-5s6hr-worker
+  namespace: openshift-machine-api
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      machine.openshift.io/cluster-api-cluster: 76f2-5s6hr
+      machine.openshift.io/cluster-api-machineset: 76f2-5s6hr-worker
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        machine.openshift.io/cluster-api-cluster: 76f2-5s6hr
+        machine.openshift.io/cluster-api-machine-role: worker
+        machine.openshift.io/cluster-api-machine-type: worker
+        machine.openshift.io/cluster-api-machineset: 76f2-5s6hr-worker
+    spec:
+      metadata:
+        creationTimestamp: null
+      providerSpec:
+        value:
+          apiVersion: openstackproviderconfig.openshift.io/v1alpha1
+          cloudName: openstack
+          cloudsSecret:
+            name: openstack-cloud-credentials
+            namespace: openshift-machine-api
+          flavor: 4c16g30d
+          image: 76f2-5s6hr-rhcos
+          kind: OpenstackProviderSpec
+          metadata:
+            creationTimestamp: null
+          networks:
+          - filter: {}
+            subnets:
+            - filter:
+                name: 76f2-5s6hr-nodes
+                tags: openshiftClusterID=76f2-5s6hr
+          securityGroups:
+          - filter: {}
+            name: 76f2-5s6hr-worker
+          serverMetadata:
+            Name: 76f2-5s6hr-worker
+            openshiftClusterID: 76f2-5s6hr
+          tags:
+          - openshiftClusterID=76f2-5s6hr
+          trunk: true
+          userDataSecret:
+            name: worker-user-data
+status:
+  replicas: 0

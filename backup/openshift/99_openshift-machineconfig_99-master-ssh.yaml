@@ -1,0 +1,27 @@
+apiVersion: machineconfiguration.openshift.io/v1
+kind: MachineConfig
+metadata:
+  creationTimestamp: null
+  labels:
+    machineconfiguration.openshift.io/role: master
+  name: 99-master-ssh
+spec:
+  config:
+    ignition:
+      config: {}
+      security:
+        tls: {}
+      timeouts: {}
+      version: 2.2.0
+    networkd: {}
+    passwd:
+      users:
+      - name: core
+        sshAuthorizedKeys:
+        - |
+          ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDM8j28HXpgCii+w9MnIwVnYyHiWJZvu+y+qMz+51jOLNQCTeK8y/qWb5v7r/jKX6braSuT5l6U+zLNnzLcHlKtHBIxNgzScSTo164qHvg8ZCu6ti7kpl3MXuokcG13xELni9rcgrGWrW4XaPRiCditqEInhSM5GXV39FdfumpQAqfbmoEWZkIkdJOheeDN60ZvXyytF2zoNLaHGwuj8LoNpiFb8LMANBewcibVUM6OgjNBC2j2mCwkjtfL4gzePEb2+Y72Cm01YF2+W63B2CVF/7B0QbYBR22OIPCkQy3TmrjQ4OUwTZhap2WvSpklxP/5ArtPqgWyt+/0TS+hXOF9 opentlc-mgr@admin.na.shared.opentlc.com
+    storage: {}
+    systemd: {}
+  fips: false
+  kernelArguments: null
+  osImageURL: ""

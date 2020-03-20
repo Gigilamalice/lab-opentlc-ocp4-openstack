@@ -1,0 +1,295 @@
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: vol1
+spec:
+  capacity:
+    storage: 20G
+  accessModes:
+  - ReadWriteOnce
+  nfs:
+    path: /user_vols/vol1
+    server: utilityvm.example.com
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: nfs
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: vol2
+spec:
+  capacity:
+    storage: 20G
+  accessModes:
+  - ReadWriteOnce
+  - ReadWriteMany
+  nfs:
+    path: /user_vols/vol2
+    server: utilityvm.example.com
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: nfs
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: vol3
+spec:
+  capacity:
+    storage: 20G
+  accessModes:
+  - ReadWriteOnce
+  nfs:
+    path: /user_vols/vol3
+    server: utilityvm.example.com
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: nfs
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: vol4
+spec:
+  capacity:
+    storage: 20G
+  accessModes:
+  - ReadWriteOnce
+  - ReadWriteMany
+  nfs:
+    path: /user_vols/vol4
+    server: utilityvm.example.com
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: nfs
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: vol5
+spec:
+  capacity:
+    storage: 20G
+  accessModes:
+  - ReadWriteOnce
+  nfs:
+    path: /user_vols/vol5
+    server: utilityvm.example.com
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: nfs
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: vol6
+spec:
+  capacity:
+    storage: 20G
+  accessModes:
+  - ReadWriteOnce
+  - ReadWriteMany
+  nfs:
+    path: /user_vols/vol6
+    server: utilityvm.example.com
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: nfs
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: vol7
+spec:
+  capacity:
+    storage: 20G
+  accessModes:
+  - ReadWriteOnce
+  nfs:
+    path: /user_vols/vol7
+    server: utilityvm.example.com
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: nfs
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: vol8
+spec:
+  capacity:
+    storage: 20G
+  accessModes:
+  - ReadWriteOnce
+  - ReadWriteMany
+  nfs:
+    path: /user_vols/vol8
+    server: utilityvm.example.com
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: nfs
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: vol9
+spec:
+  capacity:
+    storage: 20G
+  accessModes:
+  - ReadWriteOnce
+  nfs:
+    path: /user_vols/vol9
+    server: utilityvm.example.com
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: nfs
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: vol10
+spec:
+  capacity:
+    storage: 20G
+  accessModes:
+  - ReadWriteOnce
+  - ReadWriteMany
+  nfs:
+    path: /user_vols/vol10
+    server: utilityvm.example.com
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: nfs
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: vol11
+spec:
+  capacity:
+    storage: 20G
+  accessModes:
+  - ReadWriteOnce
+  nfs:
+    path: /user_vols/vol11
+    server: utilityvm.example.com
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: nfs
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: vol12
+spec:
+  capacity:
+    storage: 20G
+  accessModes:
+  - ReadWriteOnce
+  - ReadWriteMany
+  nfs:
+    path: /user_vols/vol12
+    server: utilityvm.example.com
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: nfs
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: vol13
+spec:
+  capacity:
+    storage: 20G
+  accessModes:
+  - ReadWriteOnce
+  nfs:
+    path: /user_vols/vol13
+    server: utilityvm.example.com
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: nfs
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: vol14
+spec:
+  capacity:
+    storage: 20G
+  accessModes:
+  - ReadWriteOnce
+  - ReadWriteMany
+  nfs:
+    path: /user_vols/vol14
+    server: utilityvm.example.com
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: nfs
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: vol15
+spec:
+  capacity:
+    storage: 20G
+  accessModes:
+  - ReadWriteOnce
+  nfs:
+    path: /user_vols/vol15
+    server: utilityvm.example.com
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: nfs
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: vol16
+spec:
+  capacity:
+    storage: 20G
+  accessModes:
+  - ReadWriteOnce
+  - ReadWriteMany
+  nfs:
+    path: /user_vols/vol16
+    server: utilityvm.example.com
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: nfs
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: vol17
+spec:
+  capacity:
+    storage: 20G
+  accessModes:
+  - ReadWriteOnce
+  nfs:
+    path: /user_vols/vol17
+    server: utilityvm.example.com
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: nfs
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: vol18
+spec:
+  capacity:
+    storage: 20G
+  accessModes:
+  - ReadWriteOnce
+  - ReadWriteMany
+  nfs:
+    path: /user_vols/vol18
+    server: utilityvm.example.com
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: nfs
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: vol19
+spec:
+  capacity:
+    storage: 20G
+  accessModes:
+  - ReadWriteOnce
+  nfs:
+    path: /user_vols/vol19
+    server: utilityvm.example.com
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: nfs
+---
